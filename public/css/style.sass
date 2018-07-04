@@ -1,30 +1,117 @@
+$font: 'Amiri', serif
+$first-break: 950px
+$last-break: 700px
 
 body
   margin: 0px
+  font-family: $font
 html
-  background-color: skyblue
+  background-color: #E8E8E8
 
 header
   display: flex
   flex-direction: row
   justify-content: space-between
-  position: absolute
+  align-items: center
+  position: fixed
+  z-index: 10
   top: 0px
   width: 100vw
   height: 10vh
-  background-color: white
+  background-color: #DCCEC7
+  border-bottom: 1px solid #ADA1A5
+  h1
+    margin-left: 1vw
+    font-weight: 700
+    font-style: italic
+    font-size: 7vh
+  ul
+    padding: 0px
+    list-style: none
+    display: flex
+    flex-direction: row
+    li
+      margin-right: 0.5vw
+      a
+        text-decoration: none
+        color: Black
+        font-size: 20px
+        padding: 0.2vw
+      a:hover
+        color: #91878B
+
 
 main
   position: absolute
   top: 11vh
+  width: 100vw
+  margin: 0.2vw
+  display: flex
+  flex-direction: column
+  align-items: center
+  h2
+    font-size: 5vh
+    margin: 1vh
+  h3
+    margin: 0.2vh
+    font-size: 30px
+  p
+    margin: 0px
 
 footer
   position: fixed
   bottom: 0px
   height: 5vh
-  background-color: red
   width: 100vw
   margin: 0px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #DCCEC7
+  border-top: 1px solid #ADA1A5
+
 
 .hidden
   display: none
+
+.main-container
+  display: flex
+  flex-direction: row
+
+.category
+  margin: 0px
+  font-size: 13px
+
+.price
+  font-size: 25px
+  margin: 0.5vh
+
+.stock
+  margin-top: 0px
+  margin-bottom: 0.5vh
+  font-size: 22px
+
+.individual-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: #FCFCFC
+  border: 1px solid #DCCEC7
+  border-radius: 10px
+  margin: 0.5vh
+  padding: 1vw
+
+@media screen and (max-width: $first-break)
+  header
+    img
+      display: none
+  .main-container
+    flex-direction: column
+
+@media screen and (max-width: $last-break)
+  header
+    h1
+      display: none
+    li
+      margin: 5vw

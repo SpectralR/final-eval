@@ -16,19 +16,19 @@ class UsersSeeder extends Seeder
             'name' => 'admin',
             'email' => 'admin@gmail.com',
             'password' => bcrypt('0000'),
-            'rank_id' => 1,
+            'rank' => 'admin',
         ],
         [
             'name' => 'Morgan',
             'email' => 'm@gmail.com',
             'password' => bcrypt('1111'),
-            'rank_id' => 2,
+            'rank' => 'shopkeeper',
         ],
         [
             'name' => 'Jaques',
             'email' => 'j@gmail.com',
             'password' => bcrypt('secret'),
-            'rank_id' => 3,
+            'rank' => 'customer',
         ]
       ]);
     }

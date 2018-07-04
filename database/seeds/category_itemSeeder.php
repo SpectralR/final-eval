@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class category_userSeeder extends Seeder
+class category_itemSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,8 +11,8 @@ class category_userSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('category_user')->insert(
-        [
+      DB::table('category_item')->insert(
+        [[
               'category_id' => 2,
               'item_id' => 1,
         ],
@@ -35,7 +35,7 @@ class category_userSeeder extends Seeder
         [
               'category_id' => 1,
               'item_id' => 3,
-        ]
+        ]]
       );
     }
 }

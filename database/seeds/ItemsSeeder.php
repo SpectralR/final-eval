@@ -12,7 +12,7 @@ class ItemsSeeder extends Seeder
     public function run()
     {
       DB::table('items')->insert(
-        [
+        [[
             'name' => 'Tama Charcoal Mist',
             'price' => 399.99,
             'quantity' => 5,
@@ -26,7 +26,7 @@ class ItemsSeeder extends Seeder
             'name' => 'Pearl Peau Mesh 10" Silencieuse',
             'price' => 7.20,
             'quantity' => 10,
-        ]
+        ]]
       );
     }
 }

@@ -12,9 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('music');
+    return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::middleware(['auth'])->group(function () {
+
+  Route::get('/products', 'MusicController@read');
+
+  Route::get('/product/add', function(){
+    return view('add');
+  });
+
+  Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+});

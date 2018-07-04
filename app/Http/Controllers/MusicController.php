@@ -9,9 +9,7 @@ class MusicController extends Controller
 {
     public function create()
     {
-      $items = item::all();
-      dd($items);
-      return view('products', ['items' => $items]);
+
     }
 
     public function read()

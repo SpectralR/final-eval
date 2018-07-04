@@ -11,6 +11,12 @@ class PriceSeeder extends Seeder
      */
     public function run()
     {
-        //
+      DB::table('prices')->insert(
+        [
+          ['price' => 399.99],
+          ['price' => 4],
+          ['price' => 7.20]
+        ]
+      );
     }
 }

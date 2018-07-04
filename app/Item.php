@@ -10,4 +10,8 @@ class Item extends Model
   {
     return $this->belongsToMany('App\Category');
   }
+  public function price()
+  {
+    return $this->belongsTo('App\Price');
+  }
 }

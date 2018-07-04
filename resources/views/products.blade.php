@@ -4,7 +4,10 @@
   @foreach($items as $item)
     <div>
       <h3>{{ $item->name }}</h3>
-      <p>{{ $item->price }}€</p>
+      <p>{{ $item->price->price }}€</p>
+      @foreach($item->category as $category)
+        <div class="tags">{{ $category->name }}</div>
+      @endforeach
     </div>
   @endforeach
 @endsection

@@ -14,17 +14,17 @@ class ItemsSeeder extends Seeder
       DB::table('items')->insert(
         [[
             'name' => 'Tama Charcoal Mist',
-            'price' => 399.99,
+            'price_id' => 1,
             'quantity' => 5,
         ],
         [
             'name' => 'Stagg 7A Maple Nylon',
-            'price' => 4,
+            'price_id' => 2,
             'quantity' => 20,
         ],
         [
             'name' => 'Pearl Peau Mesh 10" Silencieuse',
-            'price' => 7.20,
+            'price_id' => 3,
             'quantity' => 10,
         ]]
       );

@@ -12,8 +12,8 @@
         <ul>
           <li><a href="#"></a>Home</li>
           <li><a href="/products">Products</a></li>
-          <li><a href="#"></a>Add</li>
-          <li><a href="#"></a>Delete</li>
+          <li><a href="/product/add">Add</a></li>
+          <li><a href="/product/delete">Delete</a></li>
           <li><a href="/logout">logout</a></li>
         </ul>
       </nav>

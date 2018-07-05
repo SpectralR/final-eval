@@ -4,8 +4,8 @@
   <form class="" action="/product/update" method="post">
     @csrf
     <input class="hidden" type="number" name="id" value="{{ $item->id }}">
-    <input type="text" name="name" value="{{ $item->name }}">
-    <select class="" name="price">
+    <input class="text" type="text" name="name" value="{{ $item->name }}">
+    <select class="text" name="price">
       @foreach($prices as $price)
         @if($price == $currentPrice)
           <option value="{{ $price->id }}" selected>{{ $price->price }}€</option>
@@ -14,7 +14,7 @@
         @endif
       @endforeach
     </select>
-    <input type="number" name="quantity" value="{{ $item->quantity }}">
-    <input type="submit" name="" value="Submit">
+    <input class="text" type="number" name="quantity" value="{{ $item->quantity }}">
+    <input class="button" type="submit" name="" value="Submit">
   </form>
 @endsection

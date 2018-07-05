@@ -10,8 +10,10 @@
       @foreach($item->category as $category)
           <p class="category">{{ $category->name }}</p>
       @endforeach
-      <a href="/product/update/{{ $item->id }}"><button>Update</button></a>
+      <a href="/product/update/{{ $item->id }}"><button class="button">Update</button></a>
     </div>
   @endforeach
+</div>
+<div class="responsive">
 </div>
 @endsection

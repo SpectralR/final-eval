@@ -3,10 +3,9 @@ document.querySelector('[data-action=playIt]').addEventListener('click', functio
     document.getElementById('myAudio').play();
     setTimeout(function(){ window.location.replace("http://192.168.66.6/login"); }, 4200);
   } else {
-    let div = document.createElement('div');
     let p = document.createElement('p');
-    p.innerHTML = 'Are you really a musician?'
-    div.appendChild(p);
-    document.querySelector('main').appendChild(div);
+    p.innerHTML = 'Are you really a musician?';
+    console.log(p);
+    document.getElementById('false').appendChild(p);
   }
 })

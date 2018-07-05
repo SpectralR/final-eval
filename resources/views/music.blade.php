@@ -16,6 +16,8 @@
       <input class="text music-question" type="text" name="music" value="" placeholder="Do Re Mi Fa Sol La Si">
       <button class="button" data-action="playIt" type="button" name="button">Submit</button>
       <audio id="myAudio" src="./js/music.wav"></audio>
+      <div id="false"></div>
+      <img src="{{ asset('/css/images/music.png') }}" class="music-img">
     </main>
     <footer>
       <img src="{{ asset('/css/images/copyright.png') }}" alt="">

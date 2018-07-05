@@ -168,6 +168,13 @@ footer {
   width: 10vw;
   height: 3vw; }
 
+.music-img {
+  width: 100vw;
+  max-height: 50vh; }
+
+#false {
+  height: 10vh; }
+
 @media screen and (max-width: 950px) {
   header img {
     display: none; }

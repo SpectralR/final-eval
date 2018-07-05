@@ -11,8 +11,8 @@
       <h1>Drums'N'Sticks</h1>
       <img src="{{ asset('/css/images/logo.png') }}" alt="logo">
       @auth
-      <p>{{ Auth::user()->name }}</p>
-    @endauth
+        <p>{{ Auth::user()->name }}</p>
+      @endauth
       <nav>
         <ul>
           <li><a href="/home">Home</a></li>

@@ -19,3 +19,9 @@ Only Admin and Shopkeeper ranks are able to go to the add, update and delete Pag
 **Issues Encountered**
 
 I had issues at first to figure out correctly my database architecture, so had to begin anew, but otherwise everything went as smooth as possible!
+
+**Users**
+
+admin@gmail.com pass: 0000 rank: Admin
+m@gmail.com pass: 1111 rank: Shopkeeper
+j@gmail.com pass: secret rank: Customer

@@ -17,7 +17,7 @@ class IsAdmin
     public function handle($request, Closure $next)
     {
 
-      if (Auth::user() &&  Auth::user()->rank == "shopkeeper") {
+      if (Auth::user() &&  Auth::user()->rank == "shopkeeper" || Auth::user() && Auth::user()->rank == "admin") {
          return $next($request);
        }
 
